@@ -1,0 +1,86 @@
+/* improting google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Game background  */
+.container {
+  background: url(./Images/bg.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Game board  */
+.board {
+  background: linear-gradient(rgb(218, 238, 177), #c3e4c3, rgb(232, 243, 187));
+  border-radius: 12px;
+  border: 1px solid greenyellow;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  height: 96vh;
+  width: 40vw;
+}
+
+/* Game logo  */
+.logo {
+  background: url(./Images/snake\ logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12vw;
+  width: 34vh;
+  border-radius: 12px;
+  position: absolute;
+  left: 6px;
+  top: 2vw;
+  border: 1px solid #5ea536;
+}
+
+/* Game score  */
+.scoreBoard {
+  position: absolute;
+  font-weight: bolder;
+  font-size: 40px;
+  left: 4vh;
+  top: 16vw;
+  font-family: "Libre Baskerville", serif;
+  color: rgb(5, 40, 5);
+}
+
+/* Game Hiscore */
+.HiScore {
+  position: absolute;
+  font-weight: bolder;
+  font-size: 40px;
+  right: 20vh;
+  font-family: "Libre Baskerville", serif;
+  top: 3vw;
+  color: rgb(5, 40, 5);
+}
+
+/* Snake head */
+.Head {
+  background-color:#715bda;
+  border-radius: 6px;
+}
+
+/* snake body  */
+.Body {
+  background:teal;
+  border-radius: 20px;
+}
+
+/* Game food   */
+.Food {
+  background-color:rgb(8, 96, 96);
+  border-radius: 14px;
+}
